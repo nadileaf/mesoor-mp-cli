@@ -1,0 +1,33 @@
+$border-style: 1px solid #e1e1e350;
+
+.selected-bar {
+  @apply flex flex-nowrap items-center gap-2 p-10px pt-0 w-full;
+  box-sizing: border-box;
+  height: 34px;
+}
+
+.list-inner {
+  @apply flex flex-col justify-start items-center;
+
+  &-left {
+    border-right: $border-style;
+    width: fit-content;
+    background-color: #f5f5fa;
+    flex-shrink: 0;
+  }
+
+  &-item {
+    @apply px-20px py-15px;
+
+    &-left {
+      width: 100%;
+      min-width: max-content;
+      text-align: center;
+    }
+  }
+}
+
+.is-selected {
+  color: $uni-color-primary;
+  font-weight: 500;
+}

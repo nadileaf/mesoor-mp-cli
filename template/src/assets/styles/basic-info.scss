@@ -1,0 +1,20 @@
+.card {
+  @apply bg-white min-h-200px rounded shadow blur-md;
+  .bg {
+    background: linear-gradient(135deg, #356899, #6f9cd3);
+  }
+  &-meta {
+    @apply m-20px flex flex-col gap-4px;
+
+    .item {
+      @apply flex gap-3 items-center leading-24px;
+      .label {
+        @apply w-60px mr-3 text-gray-400 flex-shrink-0;
+      }
+    }
+  }
+}
+.divider {
+  @apply h-1px my-3;
+  background: linear-gradient(to right, #eceff445, #eceff4, #eceff445);
+}

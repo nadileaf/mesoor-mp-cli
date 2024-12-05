@@ -1,0 +1,32 @@
+{
+  "name": "mesoor-mp-cli",
+  "version": "1.0.0",
+  "description": "Mesoor mini program cli",
+  "bin": {
+    "mesoor-mp": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "template"
+  ],
+  "scripts": {
+    "dev": "node bin/cli.js"
+  },
+  "keywords": [
+    "miniprogram",
+    "cli"
+  ],
+  "author": "Jessie",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^11.2.0",
+    "inquirer": "8",
+    "ora": "5",
+    "replace-in-file": "^8.2.0"
+  }
+}

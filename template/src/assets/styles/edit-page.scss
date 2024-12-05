@@ -1,0 +1,105 @@
+$edit-field-height: 60px;
+$edit-field-grey: #f6f8fa;
+$edit-field-text-color: #5d667b;
+
+:deep(.uni-collapse-item__title-arrow) {
+  margin-right: 0 !important;
+}
+.section {
+  @apply mb-30px px-4;
+}
+
+.edit-title {
+  @apply flex items-center justify-between text-dark-50 font-medium text-18px;
+  .btn {
+    @apply flex items-center gap-1 text-11px p-1 px-2 font-normal rounded-md;
+    border: 1px solid $uni-color-primary;
+    color: $uni-color-primary;
+  }
+
+  .label.required::after {
+    content: '*';
+    opacity: 0.8;
+  }
+}
+
+.edit-field {
+  @apply flex justify-between items-center;
+  min-height: $edit-field-height;
+  border-bottom: 1px solid $edit-field-grey;
+  line-height: 1.5;
+
+  &:focus-within {
+    border-bottom-color: $uni-color-primary;
+  }
+
+  &.focus-none:focus-within {
+    border-bottom-color: $edit-field-grey;
+  }
+
+  &.is-column {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 0;
+
+    .label {
+      margin-bottom: 10px;
+    }
+  }
+
+  .display {
+    width: 60%;
+  }
+  .date {
+    min-height: $edit-field-height;
+    text-align: left;
+  }
+
+  .m-textarea {
+    @apply w-full;
+  }
+
+  .m-select {
+    height: $edit-field-height;
+    @apply w-full flex;
+  }
+
+  &-image {
+    height: $edit-field-height;
+    @apply w-full;
+  }
+
+  &-long-text {
+    @apply py-20px flex items-start justify-between;
+  }
+
+  .label {
+    color: $edit-field-text-color;
+    font-size: 14px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    &.required::after {
+      content: '*';
+      opacity: 0.8;
+    }
+  }
+}
+
+.m-textarea,
+.m-input {
+  background-color: $edit-field-grey;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: $edit-field-text-color;
+  text-align: left;
+
+  :deep(.m-textarea-placeholder) {
+    color: #999;
+
+    font-weight: 300;
+  }
+}

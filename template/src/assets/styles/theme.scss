@@ -1,0 +1,169 @@
+.text {
+  &-primary {
+    color: $uni-color-primary;
+  }
+  &-success {
+    color: $uni-color-success;
+  }
+  &-warning {
+    color: $uni-color-warning;
+  }
+  &-error {
+    color: $uni-color-error;
+  }
+  &-info {
+    color: $uni-grey-60;
+  }
+}
+
+.container {
+  @apply flex flex-col box-border min-h-100vh p-15px;
+  &.has-footer {
+    @apply pb-94px;
+  }
+  &.has-custom-navbar {
+    @apply min-h-[calc(100vh-44px-var(--status-bar-height))];
+  }
+
+  /** 固定底部 */
+  &-footer {
+    @apply fixed bottom-0 left-0 right-0 p-15px flex items-center justify-between gap-15px bg-white;
+  }
+}
+
+.header-sticky {
+  @apply sticky top-0 left-0 right-0 z-1;
+}
+
+.m-input {
+  @apply text-right w-full border-none text-14px;
+  &-placeholder {
+    @apply text-gray-300 text-14px;
+  }
+  &.readonly {
+    pointer-events: none;
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.m-searchbar .uni-searchbar {
+  padding: 0;
+  .uni-searchbar__box {
+    padding-left: 24rpx;
+  }
+
+  &.is-focus .uni-searchbar__box {
+    box-shadow: 0 0 0 1px $uni-color-primary;
+    background-color: $uni-bg-color !important;
+
+    .uni-input-placeholder {
+      color: $uni-grey-90;
+    }
+  }
+}
+
+.m-list {
+  gap: 16px;
+
+  .uni-list--border {
+    display: none !important;
+  }
+
+  .list-item {
+    @apply rounded-lg overflow-hidden;
+    .uni-list-item__container {
+      padding: 16px;
+    }
+
+    color: $uni-text-color;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.03);
+  }
+
+  .list-item .mui-avatar {
+    display: flex;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+  }
+
+  .poster-item {
+    box-shadow: 12px 26px 50px 0px rgba(90, 108, 234, 0.07);
+  }
+}
+
+.employee-activity .notice-list {
+  .uni-list-item {
+    border-radius: 8px !important;
+    border: 1px solid #f6f8fa !important;
+  }
+}
+
+.employee-statistics-list {
+  .uni-list-item {
+    border-radius: 8px !important;
+    border: 1px solid #f6f8fa !important;
+  }
+}
+
+.wish-list {
+  .uni-list-item,
+  .list-item {
+    border-radius: 8px !important;
+    background-color: #fff;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.m-date-range-picker {
+  .uni-date-x--border {
+    border-color: $uni-grey-60;
+  }
+  .uni-date-x {
+    background-color: $uni-bg-color;
+    gap: 4px;
+  }
+}
+
+.m-footer {
+  @apply p-15px gap-15px flex justify-center items-center w-100vw fixed left-0 bottom-0 z-9;
+  background-color: white;
+  border-top: 1px solid #e1e1e350;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  padding-bottom: max(var(--safe-area-inset-bottom), 15px);
+  .save,
+  .submit {
+    @apply flex-shrink-0 flex-grow;
+  }
+}
+
+.float-btn {
+  @apply fixed right-0 py-10px px-20px text-14px font-medium;
+  border-radius: 20px 0 0 20px;
+
+  &__primary {
+    @extend .float-btn;
+    background-color: $uni-color-primary;
+    color: white;
+  }
+
+  &__default {
+    @extend .float-btn;
+    background-color: white;
+    color: $uni-color-primary;
+    border: 1px solid $uni-color-primary;
+  }
+}
+
+.color-primary {
+  color: $uni-color-primary;
+}

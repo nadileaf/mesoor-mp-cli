@@ -1,0 +1,90 @@
+{
+  "pages": [
+    {
+      "path": "pages/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "backgroundColor": "#ffffff"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "packages",
+      "pages": [
+        {
+          "path": "common/file-list",
+          "style": {
+            "navigationBarTitleText": "附件"
+          }
+        },
+        {
+          "path": "common/web-view",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "common/map",
+          "style": {
+            "navigationBarTitleText": "地图"
+          }
+        },
+        {
+          "path": "common/city",
+          "style": {
+            "navigationBarTitleText": "选择城市",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "common/selector",
+          "style": {
+            "navigationBarTitleText": "",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "path": "common/long-text",
+          "style": {
+            "navigationBarTitleText": "",
+            "backgroundColor": "#ffffff"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "TODO",
+    "navigationBarBackgroundColor": "#F9F9FD",
+    "backgroundColor": "#F9F9FD",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "color": "#95969D",
+    "selectedColor": "#356899",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-selected.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my-selected.png"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  }
+}

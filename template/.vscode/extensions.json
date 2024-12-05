@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "vue.vscode-typescript-vue-plugin",
+    "voorjaar.windicss-intellisense",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "vue.volar",
+    "antfu.iconify",
+    "uni-helper.uni-app-snippets-vscode"
+  ]
+}

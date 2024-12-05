@@ -1,0 +1,21 @@
+{
+	"Print to console": {
+		"prefix": "cp",
+		"body": [
+			"import createProvider from '@/providers/create-provider';",
+			"",
+			"/** initialState */",
+			"type Props = { ",
+			" /** TODO */",
+			"};",
+			"",
+			"const { Provider, useProvider } = createProvider((initialState: Props) => {",
+			"  return {};",
+			"});",
+			"",
+			"export const _Provider = Provider;",
+			"export const use_Context = useProvider;"
+		],
+		"description": "create provider"
+	}
+}

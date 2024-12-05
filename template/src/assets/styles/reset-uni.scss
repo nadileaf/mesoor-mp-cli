@@ -1,0 +1,45 @@
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+page,
+uni-page-wrapper {
+  background-color: $uni-bg-color;
+}
+
+.uni-load-more__text {
+  color: #999 !important;
+}
+
+.mui-icon,
+.m-icon {
+  @apply inline-flex items-center;
+  .uni-icons {
+    color: unset !important;
+    font-size: unset !important;
+  }
+}
+
+.uni-list .list-item {
+  list-style: none;
+  &::marker {
+    content: none;
+  }
+}
+
+.uni-list {
+  background-color: transparent !important;
+  gap: 16px;
+}
+
+uni-icons {
+  display: inline-flex;
+}
+
+uni-tag text {
+  white-space: nowrap;
+}

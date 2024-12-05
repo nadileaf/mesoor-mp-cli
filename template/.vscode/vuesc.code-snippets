@@ -1,0 +1,32 @@
+{
+  "Vue3 SFC Template With Props & Emits": {
+    "prefix": "vuesc",
+    "body": [
+      "<script lang='ts'>",
+      "export default { name: '', options: { virtualHost: true } };",
+      "</script>",
+      "",
+      "<script lang='ts' setup>",
+      "",
+      "type Props = {",
+      "modelValue: string;",
+      "}",
+      "type Emits = {",
+      "(e: 'update:modelValue', value: Props['modelValue']): void;",
+      "}",
+      "const props = defineProps<Props>();",
+      "const emits = defineEmits<Emits>();",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "",
+      "</template>",
+      "",
+      "<style lang='scss' scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Vue3 SFC Template With Props & Emits"
+  }
+}
